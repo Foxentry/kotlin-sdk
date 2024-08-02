@@ -10,7 +10,7 @@ package com.foxentry.foxentrysdk.services
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.foxentry.foxentrysdk.core.*
 import com.foxentry.foxentrysdk.models.*
-import io.dxheroes.foxentrysdk.services.CompanyService.*
+import com.foxentry.foxentrysdk.services.CompanyService.*
 import io.ktor.client.*
 import io.ktor.client.engine.mock.*
 import io.ktor.client.plugins.contentnegotiation.*
@@ -23,7 +23,7 @@ import org.junit.jupiter.api.*
 class CompanyServiceTest {
   private val objectMapper = jacksonObjectMapper()
   private val testFile =
-      File("src/test/kotlin/io/dxheroes/foxentrysdk/services/CompanyServiceTests.json")
+      File("src/test/kotlin/com/foxentry/foxentrysdk/services/CompanyServiceTests.json")
   private val config = Config(url = "http://localhost:8080", token = "test-token")
 
   @Test
