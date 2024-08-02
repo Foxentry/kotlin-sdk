@@ -1,0 +1,1689 @@
+{
+  "validateCompanyData": {
+    "status": 200,
+    "request": {
+      "endpoint": "company/validate",
+      "code": "gc0nCfcELaPSHH4Qo4UBaC7DbAj6G4",
+      "customId": "customer567914",
+      "query": {
+        "name": "AVA Trans s.r.o.",
+        "country": "SK",
+        "registrationNumber": "52072169",
+        "taxNumber": "2120884337",
+        "vatNumber": "SK2120884337"
+      },
+      "options": {
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "includeTerminatedSubjects": true,
+        "resultsLimit": 10,
+        "zipFormat": false,
+        "cityFormat": "basic",
+        "countryFormat": "alpha2",
+        "filterMode": "limit"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "result": {
+        "data": {
+          "country": "CZ",
+          "uuid": "",
+          "name": "Avantro s.r.o.",
+          "registrationNumber": "04997476",
+          "taxNumber": "CZ04997476",
+          "vatNumber": "CZ04997476",
+          "vatNumberSpecial": "CZ0581019",
+          "address": {
+            "data": {
+              "country": "CZ",
+              "region": "Hlavní město Praha",
+              "district": "Hlavní město Praha",
+              "cityDistrict": "Praha 6",
+              "cityDistrictSpecial": "Praha 6",
+              "cityPart": "Dejvice",
+              "cityAdministrative": "Kraków",
+              "cadastralArea": "Dejvice",
+              "ids": {
+                "internal": "2070391",
+                "external": "22349995",
+                "region": "19",
+                "discrict": "9999",
+                "cityDistrictSpecial": "86",
+                "cityDistrict": "500208",
+                "cityPart": "400637",
+                "cadastralArea": "730955",
+                "city": "554782",
+                "street": "554782"
+              },
+              "street": "Jeseniova",
+              "number": {
+                "part1": "137",
+                "part1Number": "137",
+                "part1Letter": "null",
+                "part2": "16",
+                "part2Number": "16",
+                "part2Letter": "null",
+                "full": "137/16"
+              },
+              "streetWithNumber": "Jeseniova 1151/55",
+              "city": "Praha",
+              "zip": "13000",
+              "postOffice": {
+                "name": "Praha 086"
+              },
+              "geometry": {
+                "gps": {
+                  "lat": 50.087440865479,
+                  "lon": 14.463284033285
+                },
+                "custom": [
+                  {
+                    "type": "JTSK",
+                    "coordinates": {
+                      "x": 739831.1,
+                      "y": 1043425.38
+                    }
+                  }
+                ]
+              },
+              "full": "Jeseniova 1151/55, 130 00 Praha 3"
+            }
+          },
+          "addressOfficial": {
+            "data": {
+              "country": "CZ",
+              "street": "Jeseniova",
+              "number": {
+                "part1": "137",
+                "part1Number": "137",
+                "part1Letter": "null",
+                "part2": "16",
+                "part2Number": "16",
+                "part2Letter": "null",
+                "full": "137/16"
+              },
+              "streetWithNumber": "Jeseniova 1151/55",
+              "city": "Praha",
+              "zip": "13000",
+              "full": "Jeseniova 1151/55 Praha 130000"
+            }
+          },
+          "nace": [
+            {
+              "code": "74",
+              "name": "Ostatní profesní, vědecké a technické činnosti",
+              "isPrimary": false
+            }
+          ],
+          "databoxes": [
+            {
+              "code": "txutpba",
+              "name": "AVANTRO s.r.o.",
+              "receivingMessages": true
+            }
+          ],
+          "registrations": [
+            {
+              "type": "businessRegister",
+              "data": {
+                "registrator": {
+                  "name": "Městský soud v Praze",
+                  "detail": "Územní pracoviště pro Prahu 8, Trojská 13a, PRAHA 8, tel. 266 013 111"
+                },
+                "reference": "C 256795"
+              }
+            }
+          ],
+          "legalForm": {
+            "code": "112",
+            "name": "Společnost s ručením omezeným."
+          },
+          "legalFormSpecific": {
+            "code": "null",
+            "name": "null"
+          },
+          "esa2010": {
+            "code": "11002",
+            "name": "Nefinanční podniky soukromé národní"
+          },
+          "dates": {
+            "created": "2016-04-15",
+            "terminated": "2016-04-15"
+          },
+          "employees": {
+            "count": "null",
+            "category": "1000-1499"
+          },
+          "insolvency": {
+            "history": [
+              {
+                "reference": "65 INS 12632 / 2023",
+                "dateFrom": "2021-08-01",
+                "dateTo": "2025-08-01",
+                "court": {
+                  "name": "Krajský soud v Hradci Králové."
+                },
+                "status": "NEVYRIZENA",
+                "detailUrl": "https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=F"
+              }
+            ]
+          },
+          "businessPremises": [
+            {
+              "label": "Obchodní centrum Havlíčkův Brod.",
+              "address": {
+                "full": "Nad Rybníkem 3169, 580 01,  Havlíčkův Brod"
+              },
+              "activitySubjects": "Zprostředkovatelská činnost"
+            }
+          ],
+          "authority": [
+            {
+              "name": "Statutární orgán",
+              "members": [
+                {
+                  "name": "Pavel Hrdlička",
+                  "address": {
+                    "data": {
+                      "country": "CZ",
+                      "region": "Hlavní město Praha",
+                      "district": "Hlavní město Praha",
+                      "cityDistrict": "Praha 6",
+                      "cityDistrictSpecial": "Praha 6",
+                      "cityPart": "Dejvice",
+                      "cityAdministrative": "Kraków",
+                      "cadastralArea": "Dejvice",
+                      "ids": {
+                        "internal": "2070391",
+                        "external": "22349995",
+                        "region": "19",
+                        "discrict": "9999",
+                        "cityDistrictSpecial": "86",
+                        "cityDistrict": "500208",
+                        "cityPart": "400637",
+                        "cadastralArea": "730955",
+                        "city": "554782",
+                        "street": "554782"
+                      },
+                      "street": "Jeseniova",
+                      "number": {
+                        "part1": "137",
+                        "part1Number": "137",
+                        "part1Letter": "null",
+                        "part2": "16",
+                        "part2Number": "16",
+                        "part2Letter": "null",
+                        "full": "137/16"
+                      },
+                      "streetWithNumber": "Jeseniova 1151/55",
+                      "city": "Praha",
+                      "zip": "13000",
+                      "postOffice": {
+                        "name": "Praha 086"
+                      },
+                      "geometry": {
+                        "gps": {
+                          "lat": 50.087440865479,
+                          "lon": 14.463284033285
+                        },
+                        "custom": [
+                          {
+                            "type": "JTSK",
+                            "coordinates": {
+                              "x": 739831.1,
+                              "y": 1043425.38
+                            }
+                          }
+                        ]
+                      },
+                      "full": "Jeseniova 1151/55, 130 00 Praha 3"
+                    }
+                  },
+                  "addressOficial": {
+                    "data": {
+                      "country": "CZ",
+                      "street": "Jeseniova",
+                      "number": {
+                        "part1": "137",
+                        "part1Number": "137",
+                        "part1Letter": "null",
+                        "part2": "16",
+                        "part2Number": "16",
+                        "part2Letter": "null",
+                        "full": "137/16"
+                      },
+                      "streetWithNumber": "Jeseniova 1151/55",
+                      "city": "Praha",
+                      "zip": "13000",
+                      "full": "Jeseniova 1151/55 Praha 130000"
+                    }
+                  },
+                  "function": "jednatel",
+                  "birthDate": "1988-08-01",
+                  "registrationNumber": "null"
+                }
+              ],
+              "decisions": ["Společnost zastupuje jednatel samostatně."]
+            }
+          ],
+          "capital": {
+            "value": {
+              "amount": "200000",
+              "currency": "CZK"
+            },
+            "shareholders": [
+              {
+                "shareholder": "PAVEL HRDLIČKA , dat. nar. 14. listopadu 1990 V Zahradách 277, 751 11 Radslavice",
+                "share": {
+                  "amount": "200000",
+                  "currency": "CZK",
+                  "percent": "100",
+                  "percentPaid": "100"
+                },
+                "info": ["Druh podílu: základní, se kterým nejsou spojené žádné zvláštní práva a povinnosti"]
+              }
+            ],
+            "stocks": ["100 ks akcie na jméno v listinné podobě ve jmenovité hodnotě 20 000 ,- Kč."]
+          },
+          "tradeLicences": [
+            {
+              "type": "Ohlašovací volná",
+              "name": "Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona",
+              "valid": {
+                "from": "2016-04-15",
+                "fromText": "Dnem zápisu do spolkového rejstříku.",
+                "to": "2030-04-15",
+                "toText": "Na dobu neurčitou."
+              },
+              "interrupted": {
+                "from": "2021-08-15",
+                "to": "2025-08-15"
+              },
+              "responsiblePerson": "Jan Novák",
+              "activitySubject": ["Broušení technického a šperkového kamene"]
+            }
+          ],
+          "vat": {
+            "status": "payer",
+            "reliability": {
+              "reliable": true,
+              "unreliableFrom": "2018-09-01"
+            },
+            "bankAccounts": [
+              {
+                "number": "55567899/2010"
+              }
+            ],
+            "history": [
+              {
+                "vatNumber": "CZ04997476",
+                "registrationType": "payer",
+                "validFrom": "2017-09-01",
+                "validTo": "null",
+                "isGroupRegistration": false
+              }
+            ]
+          }
+        },
+        "isValid": true,
+        "proposal": "valid",
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ]
+      },
+      "resultCorrected": {
+        "data": {
+          "country": "CZ",
+          "uuid": "",
+          "name": "Avantro s.r.o.",
+          "registrationNumber": "04997476",
+          "taxNumber": "CZ04997476",
+          "vatNumber": "CZ04997476",
+          "vatNumberSpecial": "CZ0581019",
+          "address": {
+            "data": {
+              "country": "CZ",
+              "region": "Hlavní město Praha",
+              "district": "Hlavní město Praha",
+              "cityDistrict": "Praha 6",
+              "cityDistrictSpecial": "Praha 6",
+              "cityPart": "Dejvice",
+              "cityAdministrative": "Kraków",
+              "cadastralArea": "Dejvice",
+              "ids": {
+                "internal": "2070391",
+                "external": "22349995",
+                "region": "19",
+                "discrict": "9999",
+                "cityDistrictSpecial": "86",
+                "cityDistrict": "500208",
+                "cityPart": "400637",
+                "cadastralArea": "730955",
+                "city": "554782",
+                "street": "554782"
+              },
+              "street": "Jeseniova",
+              "number": {
+                "part1": "137",
+                "part1Number": "137",
+                "part1Letter": "null",
+                "part2": "16",
+                "part2Number": "16",
+                "part2Letter": "null",
+                "full": "137/16"
+              },
+              "streetWithNumber": "Jeseniova 1151/55",
+              "city": "Praha",
+              "zip": "13000",
+              "postOffice": {
+                "name": "Praha 086"
+              },
+              "geometry": {
+                "gps": {
+                  "lat": 50.087440865479,
+                  "lon": 14.463284033285
+                },
+                "custom": [
+                  {
+                    "type": "JTSK",
+                    "coordinates": {
+                      "x": 739831.1,
+                      "y": 1043425.38
+                    }
+                  }
+                ]
+              },
+              "full": "Jeseniova 1151/55, 130 00 Praha 3"
+            }
+          },
+          "addressOfficial": {
+            "data": {
+              "country": "CZ",
+              "street": "Jeseniova",
+              "number": {
+                "part1": "137",
+                "part1Number": "137",
+                "part1Letter": "null",
+                "part2": "16",
+                "part2Number": "16",
+                "part2Letter": "null",
+                "full": "137/16"
+              },
+              "streetWithNumber": "Jeseniova 1151/55",
+              "city": "Praha",
+              "zip": "13000",
+              "full": "Jeseniova 1151/55 Praha 130000"
+            }
+          },
+          "nace": [
+            {
+              "code": "74",
+              "name": "Ostatní profesní, vědecké a technické činnosti",
+              "isPrimary": false
+            }
+          ],
+          "databoxes": [
+            {
+              "code": "txutpba",
+              "name": "AVANTRO s.r.o.",
+              "receivingMessages": true
+            }
+          ],
+          "registrations": [
+            {
+              "type": "businessRegister",
+              "data": {
+                "registrator": {
+                  "name": "Městský soud v Praze",
+                  "detail": "Územní pracoviště pro Prahu 8, Trojská 13a, PRAHA 8, tel. 266 013 111"
+                },
+                "reference": "C 256795"
+              }
+            }
+          ],
+          "legalForm": {
+            "code": "112",
+            "name": "Společnost s ručením omezeným."
+          },
+          "legalFormSpecific": {
+            "code": "null",
+            "name": "null"
+          },
+          "esa2010": {
+            "code": "11002",
+            "name": "Nefinanční podniky soukromé národní"
+          },
+          "dates": {
+            "created": "2016-04-15",
+            "terminated": "2016-04-15"
+          },
+          "employees": {
+            "count": "null",
+            "category": "1000-1499"
+          },
+          "insolvency": {
+            "history": [
+              {
+                "reference": "65 INS 12632 / 2023",
+                "dateFrom": "2021-08-01",
+                "dateTo": "2025-08-01",
+                "court": {
+                  "name": "Krajský soud v Hradci Králové."
+                },
+                "status": "NEVYRIZENA",
+                "detailUrl": "https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=F"
+              }
+            ]
+          },
+          "businessPremises": [
+            {
+              "label": "Obchodní centrum Havlíčkův Brod.",
+              "address": {
+                "full": "Nad Rybníkem 3169, 580 01,  Havlíčkův Brod"
+              },
+              "activitySubjects": "Zprostředkovatelská činnost"
+            }
+          ],
+          "authority": [
+            {
+              "name": "Statutární orgán",
+              "members": [
+                {
+                  "name": "Pavel Hrdlička",
+                  "address": {
+                    "data": {
+                      "country": "CZ",
+                      "region": "Hlavní město Praha",
+                      "district": "Hlavní město Praha",
+                      "cityDistrict": "Praha 6",
+                      "cityDistrictSpecial": "Praha 6",
+                      "cityPart": "Dejvice",
+                      "cityAdministrative": "Kraków",
+                      "cadastralArea": "Dejvice",
+                      "ids": {
+                        "internal": "2070391",
+                        "external": "22349995",
+                        "region": "19",
+                        "discrict": "9999",
+                        "cityDistrictSpecial": "86",
+                        "cityDistrict": "500208",
+                        "cityPart": "400637",
+                        "cadastralArea": "730955",
+                        "city": "554782",
+                        "street": "554782"
+                      },
+                      "street": "Jeseniova",
+                      "number": {
+                        "part1": "137",
+                        "part1Number": "137",
+                        "part1Letter": "null",
+                        "part2": "16",
+                        "part2Number": "16",
+                        "part2Letter": "null",
+                        "full": "137/16"
+                      },
+                      "streetWithNumber": "Jeseniova 1151/55",
+                      "city": "Praha",
+                      "zip": "13000",
+                      "postOffice": {
+                        "name": "Praha 086"
+                      },
+                      "geometry": {
+                        "gps": {
+                          "lat": 50.087440865479,
+                          "lon": 14.463284033285
+                        },
+                        "custom": [
+                          {
+                            "type": "JTSK",
+                            "coordinates": {
+                              "x": 739831.1,
+                              "y": 1043425.38
+                            }
+                          }
+                        ]
+                      },
+                      "full": "Jeseniova 1151/55, 130 00 Praha 3"
+                    }
+                  },
+                  "addressOficial": {
+                    "data": {
+                      "country": "CZ",
+                      "street": "Jeseniova",
+                      "number": {
+                        "part1": "137",
+                        "part1Number": "137",
+                        "part1Letter": "null",
+                        "part2": "16",
+                        "part2Number": "16",
+                        "part2Letter": "null",
+                        "full": "137/16"
+                      },
+                      "streetWithNumber": "Jeseniova 1151/55",
+                      "city": "Praha",
+                      "zip": "13000",
+                      "full": "Jeseniova 1151/55 Praha 130000"
+                    }
+                  },
+                  "function": "jednatel",
+                  "birthDate": "1988-08-01",
+                  "registrationNumber": "null"
+                }
+              ],
+              "decisions": ["Společnost zastupuje jednatel samostatně."]
+            }
+          ],
+          "capital": {
+            "value": {
+              "amount": "200000",
+              "currency": "CZK"
+            },
+            "shareholders": [
+              {
+                "shareholder": "PAVEL HRDLIČKA , dat. nar. 14. listopadu 1990 V Zahradách 277, 751 11 Radslavice",
+                "share": {
+                  "amount": "200000",
+                  "currency": "CZK",
+                  "percent": "100",
+                  "percentPaid": "100"
+                },
+                "info": ["Druh podílu: základní, se kterým nejsou spojené žádné zvláštní práva a povinnosti"]
+              }
+            ],
+            "stocks": ["100 ks akcie na jméno v listinné podobě ve jmenovité hodnotě 20 000 ,- Kč."]
+          },
+          "tradeLicences": [
+            {
+              "type": "Ohlašovací volná",
+              "name": "Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona",
+              "valid": {
+                "from": "2016-04-15",
+                "fromText": "Dnem zápisu do spolkového rejstříku.",
+                "to": "2030-04-15",
+                "toText": "Na dobu neurčitou."
+              },
+              "interrupted": {
+                "from": "2021-08-15",
+                "to": "2025-08-15"
+              },
+              "responsiblePerson": "Jan Novák",
+              "activitySubject": ["Broušení technického a šperkového kamene"]
+            }
+          ],
+          "vat": {
+            "status": "payer",
+            "reliability": {
+              "reliable": true,
+              "unreliableFrom": "2018-09-01"
+            },
+            "bankAccounts": [
+              {
+                "number": "55567899/2010"
+              }
+            ],
+            "history": [
+              {
+                "vatNumber": "CZ04997476",
+                "registrationType": "payer",
+                "validFrom": "2017-09-01",
+                "validTo": "null",
+                "isGroupRegistration": false
+              }
+            ]
+          }
+        },
+        "isValid": true,
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ],
+        "fixes": [
+          {
+            "group": "FORMAT",
+            "type": "CHANGED",
+            "subtype": "CASE_SENSITIVITY",
+            "data": {
+              "typeFrom": "email",
+              "type": "email",
+              "valueFrom": "me@gmail.cz",
+              "value": "me@gmail.com"
+            }
+          }
+        ]
+      },
+      "suggestions": [
+        {
+          "data": {
+            "country": "CZ",
+            "uuid": "",
+            "name": "Avantro s.r.o.",
+            "registrationNumber": "04997476",
+            "taxNumber": "CZ04997476",
+            "vatNumber": "CZ04997476",
+            "vatNumberSpecial": "CZ0581019",
+            "address": {
+              "data": {
+                "country": "CZ",
+                "region": "Hlavní město Praha",
+                "district": "Hlavní město Praha",
+                "cityDistrict": "Praha 6",
+                "cityDistrictSpecial": "Praha 6",
+                "cityPart": "Dejvice",
+                "cityAdministrative": "Kraków",
+                "cadastralArea": "Dejvice",
+                "ids": {
+                  "internal": "2070391",
+                  "external": "22349995",
+                  "region": "19",
+                  "discrict": "9999",
+                  "cityDistrictSpecial": "86",
+                  "cityDistrict": "500208",
+                  "cityPart": "400637",
+                  "cadastralArea": "730955",
+                  "city": "554782",
+                  "street": "554782"
+                },
+                "street": "Jeseniova",
+                "number": {
+                  "part1": "137",
+                  "part1Number": "137",
+                  "part1Letter": "null",
+                  "part2": "16",
+                  "part2Number": "16",
+                  "part2Letter": "null",
+                  "full": "137/16"
+                },
+                "streetWithNumber": "Jeseniova 1151/55",
+                "city": "Praha",
+                "zip": "13000",
+                "postOffice": {
+                  "name": "Praha 086"
+                },
+                "geometry": {
+                  "gps": {
+                    "lat": 50.087440865479,
+                    "lon": 14.463284033285
+                  },
+                  "custom": [
+                    {
+                      "type": "JTSK",
+                      "coordinates": {
+                        "x": 739831.1,
+                        "y": 1043425.38
+                      }
+                    }
+                  ]
+                },
+                "full": "Jeseniova 1151/55, 130 00 Praha 3"
+              }
+            },
+            "addressOfficial": {
+              "data": {
+                "country": "CZ",
+                "street": "Jeseniova",
+                "number": {
+                  "part1": "137",
+                  "part1Number": "137",
+                  "part1Letter": "null",
+                  "part2": "16",
+                  "part2Number": "16",
+                  "part2Letter": "null",
+                  "full": "137/16"
+                },
+                "streetWithNumber": "Jeseniova 1151/55",
+                "city": "Praha",
+                "zip": "13000",
+                "full": "Jeseniova 1151/55 Praha 130000"
+              }
+            },
+            "nace": [
+              {
+                "code": "74",
+                "name": "Ostatní profesní, vědecké a technické činnosti",
+                "isPrimary": false
+              }
+            ],
+            "databoxes": [
+              {
+                "code": "txutpba",
+                "name": "AVANTRO s.r.o.",
+                "receivingMessages": true
+              }
+            ],
+            "registrations": [
+              {
+                "type": "businessRegister",
+                "data": {
+                  "registrator": {
+                    "name": "Městský soud v Praze",
+                    "detail": "Územní pracoviště pro Prahu 8, Trojská 13a, PRAHA 8, tel. 266 013 111"
+                  },
+                  "reference": "C 256795"
+                }
+              }
+            ],
+            "legalForm": {
+              "code": "112",
+              "name": "Společnost s ručením omezeným."
+            },
+            "legalFormSpecific": {
+              "code": "null",
+              "name": "null"
+            },
+            "esa2010": {
+              "code": "11002",
+              "name": "Nefinanční podniky soukromé národní"
+            },
+            "dates": {
+              "created": "2016-04-15",
+              "terminated": "2016-04-15"
+            },
+            "employees": {
+              "count": "null",
+              "category": "1000-1499"
+            },
+            "insolvency": {
+              "history": [
+                {
+                  "reference": "65 INS 12632 / 2023",
+                  "dateFrom": "2021-08-01",
+                  "dateTo": "2025-08-01",
+                  "court": {
+                    "name": "Krajský soud v Hradci Králové."
+                  },
+                  "status": "NEVYRIZENA",
+                  "detailUrl": "https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=F"
+                }
+              ]
+            },
+            "businessPremises": [
+              {
+                "label": "Obchodní centrum Havlíčkův Brod.",
+                "address": {
+                  "full": "Nad Rybníkem 3169, 580 01,  Havlíčkův Brod"
+                },
+                "activitySubjects": "Zprostředkovatelská činnost"
+              }
+            ],
+            "authority": [
+              {
+                "name": "Statutární orgán",
+                "members": [
+                  {
+                    "name": "Pavel Hrdlička",
+                    "address": {
+                      "data": {
+                        "country": "CZ",
+                        "region": "Hlavní město Praha",
+                        "district": "Hlavní město Praha",
+                        "cityDistrict": "Praha 6",
+                        "cityDistrictSpecial": "Praha 6",
+                        "cityPart": "Dejvice",
+                        "cityAdministrative": "Kraków",
+                        "cadastralArea": "Dejvice",
+                        "ids": {
+                          "internal": "2070391",
+                          "external": "22349995",
+                          "region": "19",
+                          "discrict": "9999",
+                          "cityDistrictSpecial": "86",
+                          "cityDistrict": "500208",
+                          "cityPart": "400637",
+                          "cadastralArea": "730955",
+                          "city": "554782",
+                          "street": "554782"
+                        },
+                        "street": "Jeseniova",
+                        "number": {
+                          "part1": "137",
+                          "part1Number": "137",
+                          "part1Letter": "null",
+                          "part2": "16",
+                          "part2Number": "16",
+                          "part2Letter": "null",
+                          "full": "137/16"
+                        },
+                        "streetWithNumber": "Jeseniova 1151/55",
+                        "city": "Praha",
+                        "zip": "13000",
+                        "postOffice": {
+                          "name": "Praha 086"
+                        },
+                        "geometry": {
+                          "gps": {
+                            "lat": 50.087440865479,
+                            "lon": 14.463284033285
+                          },
+                          "custom": [
+                            {
+                              "type": "JTSK",
+                              "coordinates": {
+                                "x": 739831.1,
+                                "y": 1043425.38
+                              }
+                            }
+                          ]
+                        },
+                        "full": "Jeseniova 1151/55, 130 00 Praha 3"
+                      }
+                    },
+                    "addressOficial": {
+                      "data": {
+                        "country": "CZ",
+                        "street": "Jeseniova",
+                        "number": {
+                          "part1": "137",
+                          "part1Number": "137",
+                          "part1Letter": "null",
+                          "part2": "16",
+                          "part2Number": "16",
+                          "part2Letter": "null",
+                          "full": "137/16"
+                        },
+                        "streetWithNumber": "Jeseniova 1151/55",
+                        "city": "Praha",
+                        "zip": "13000",
+                        "full": "Jeseniova 1151/55 Praha 130000"
+                      }
+                    },
+                    "function": "jednatel",
+                    "birthDate": "1988-08-01",
+                    "registrationNumber": "null"
+                  }
+                ],
+                "decisions": ["Společnost zastupuje jednatel samostatně."]
+              }
+            ],
+            "capital": {
+              "value": {
+                "amount": "200000",
+                "currency": "CZK"
+              },
+              "shareholders": [
+                {
+                  "shareholder": "PAVEL HRDLIČKA , dat. nar. 14. listopadu 1990 V Zahradách 277, 751 11 Radslavice",
+                  "share": {
+                    "amount": "200000",
+                    "currency": "CZK",
+                    "percent": "100",
+                    "percentPaid": "100"
+                  },
+                  "info": ["Druh podílu: základní, se kterým nejsou spojené žádné zvláštní práva a povinnosti"]
+                }
+              ],
+              "stocks": ["100 ks akcie na jméno v listinné podobě ve jmenovité hodnotě 20 000 ,- Kč."]
+            },
+            "tradeLicences": [
+              {
+                "type": "Ohlašovací volná",
+                "name": "Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona",
+                "valid": {
+                  "from": "2016-04-15",
+                  "fromText": "Dnem zápisu do spolkového rejstříku.",
+                  "to": "2030-04-15",
+                  "toText": "Na dobu neurčitou."
+                },
+                "interrupted": {
+                  "from": "2021-08-15",
+                  "to": "2025-08-15"
+                },
+                "responsiblePerson": "Jan Novák",
+                "activitySubject": ["Broušení technického a šperkového kamene"]
+              }
+            ],
+            "vat": {
+              "status": "payer",
+              "reliability": {
+                "reliable": true,
+                "unreliableFrom": "2018-09-01"
+              },
+              "bankAccounts": [
+                {
+                  "number": "55567899/2010"
+                }
+              ],
+              "history": [
+                {
+                  "vatNumber": "CZ04997476",
+                  "registrationType": "payer",
+                  "validFrom": "2017-09-01",
+                  "validTo": "null",
+                  "isGroupRegistration": false
+                }
+              ]
+            }
+          },
+          "isValid": true,
+          "errors": [
+            {
+              "group": "SYNTAX",
+              "type": "CHARACTERS",
+              "subtype": "NOT_ALLOWED",
+              "severity": "critical",
+              "relatedTo": ["numberWithPrefix"],
+              "description": "Disallowed characters were used in the value."
+            }
+          ],
+          "fixes": [
+            {
+              "group": "FORMAT",
+              "type": "CHANGED",
+              "subtype": "CASE_SENSITIVITY",
+              "data": {
+                "typeFrom": "email",
+                "type": "email",
+                "valueFrom": "me@gmail.cz",
+                "value": "me@gmail.com"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "companySearch": {
+    "status": 200,
+    "request": {
+      "endpoint": "company/validate",
+      "code": "gc0nCfcELaPSHH4Qo4UBaC7DbAj6G4",
+      "customId": "customer567914",
+      "query": {
+        "type": "name",
+        "value": "Avantro s.r.o.",
+        "filter": {
+          "registrationNumber": "1234567",
+          "taxNumber": "11223344",
+          "vatNumber": "11223344",
+          "name": "Avantro s.r.o.",
+          "country": "CZ"
+        }
+      },
+      "options": {
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "resultsLimit": 10,
+        "includeTerminatedSubjects": false,
+        "filterMode": "limit",
+        "filterAcceptFormat": true,
+        "filterAcceptAlternatives": true,
+        "filterExactMatch": true,
+        "zipFormat": false,
+        "cityFormat": "basic",
+        "countryFormat": "alpha2"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "resultsCount": 1,
+      "results": [
+        {
+          "data": {
+            "country": "CZ",
+            "uuid": "",
+            "name": "Avantro s.r.o.",
+            "registrationNumber": "04997476",
+            "taxNumber": "CZ04997476",
+            "vatNumber": "CZ04997476",
+            "vatNumberSpecial": "CZ0581019",
+            "address": {
+              "data": {
+                "country": "CZ",
+                "region": "Hlavní město Praha",
+                "district": "Hlavní město Praha",
+                "cityDistrict": "Praha 6",
+                "cityDistrictSpecial": "Praha 6",
+                "cityPart": "Dejvice",
+                "cityAdministrative": "Kraków",
+                "cadastralArea": "Dejvice",
+                "ids": {
+                  "internal": "2070391",
+                  "external": "22349995",
+                  "region": "19",
+                  "discrict": "9999",
+                  "cityDistrictSpecial": "86",
+                  "cityDistrict": "500208",
+                  "cityPart": "400637",
+                  "cadastralArea": "730955",
+                  "city": "554782",
+                  "street": "554782"
+                },
+                "street": "Jeseniova",
+                "number": {
+                  "part1": "137",
+                  "part1Number": "137",
+                  "part1Letter": "null",
+                  "part2": "16",
+                  "part2Number": "16",
+                  "part2Letter": "null",
+                  "full": "137/16"
+                },
+                "streetWithNumber": "Jeseniova 1151/55",
+                "city": "Praha",
+                "zip": "13000",
+                "postOffice": {
+                  "name": "Praha 086"
+                },
+                "geometry": {
+                  "gps": {
+                    "lat": 50.087440865479,
+                    "lon": 14.463284033285
+                  },
+                  "custom": [
+                    {
+                      "type": "JTSK",
+                      "coordinates": {
+                        "x": 739831.1,
+                        "y": 1043425.38
+                      }
+                    }
+                  ]
+                },
+                "full": "Jeseniova 1151/55, 130 00 Praha 3"
+              }
+            },
+            "addressOfficial": {
+              "data": {
+                "country": "CZ",
+                "street": "Jeseniova",
+                "number": {
+                  "part1": "137",
+                  "part1Number": "137",
+                  "part1Letter": "null",
+                  "part2": "16",
+                  "part2Number": "16",
+                  "part2Letter": "null",
+                  "full": "137/16"
+                },
+                "streetWithNumber": "Jeseniova 1151/55",
+                "city": "Praha",
+                "zip": "13000",
+                "full": "Jeseniova 1151/55 Praha 130000"
+              }
+            },
+            "nace": [
+              {
+                "code": "74",
+                "name": "Ostatní profesní, vědecké a technické činnosti",
+                "isPrimary": false
+              }
+            ],
+            "databoxes": [
+              {
+                "code": "txutpba",
+                "name": "AVANTRO s.r.o.",
+                "receivingMessages": true
+              }
+            ],
+            "registrations": [
+              {
+                "type": "businessRegister",
+                "data": {
+                  "registrator": {
+                    "name": "Městský soud v Praze",
+                    "detail": "Územní pracoviště pro Prahu 8, Trojská 13a, PRAHA 8, tel. 266 013 111"
+                  },
+                  "reference": "C 256795"
+                }
+              }
+            ],
+            "legalForm": {
+              "code": "112",
+              "name": "Společnost s ručením omezeným."
+            },
+            "legalFormSpecific": {
+              "code": "null",
+              "name": "null"
+            },
+            "esa2010": {
+              "code": "11002",
+              "name": "Nefinanční podniky soukromé národní"
+            },
+            "dates": {
+              "created": "2016-04-15",
+              "terminated": "2016-04-15"
+            },
+            "employees": {
+              "count": "null",
+              "category": "1000-1499"
+            },
+            "insolvency": {
+              "history": [
+                {
+                  "reference": "65 INS 12632 / 2023",
+                  "dateFrom": "2021-08-01",
+                  "dateTo": "2025-08-01",
+                  "court": {
+                    "name": "Krajský soud v Hradci Králové."
+                  },
+                  "status": "NEVYRIZENA",
+                  "detailUrl": "https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=F"
+                }
+              ]
+            },
+            "businessPremises": [
+              {
+                "label": "Obchodní centrum Havlíčkův Brod.",
+                "address": {
+                  "full": "Nad Rybníkem 3169, 580 01,  Havlíčkův Brod"
+                },
+                "activitySubjects": "Zprostředkovatelská činnost"
+              }
+            ],
+            "authority": [
+              {
+                "name": "Statutární orgán",
+                "members": [
+                  {
+                    "name": "Pavel Hrdlička",
+                    "address": {
+                      "data": {
+                        "country": "CZ",
+                        "region": "Hlavní město Praha",
+                        "district": "Hlavní město Praha",
+                        "cityDistrict": "Praha 6",
+                        "cityDistrictSpecial": "Praha 6",
+                        "cityPart": "Dejvice",
+                        "cityAdministrative": "Kraków",
+                        "cadastralArea": "Dejvice",
+                        "ids": {
+                          "internal": "2070391",
+                          "external": "22349995",
+                          "region": "19",
+                          "discrict": "9999",
+                          "cityDistrictSpecial": "86",
+                          "cityDistrict": "500208",
+                          "cityPart": "400637",
+                          "cadastralArea": "730955",
+                          "city": "554782",
+                          "street": "554782"
+                        },
+                        "street": "Jeseniova",
+                        "number": {
+                          "part1": "137",
+                          "part1Number": "137",
+                          "part1Letter": "null",
+                          "part2": "16",
+                          "part2Number": "16",
+                          "part2Letter": "null",
+                          "full": "137/16"
+                        },
+                        "streetWithNumber": "Jeseniova 1151/55",
+                        "city": "Praha",
+                        "zip": "13000",
+                        "postOffice": {
+                          "name": "Praha 086"
+                        },
+                        "geometry": {
+                          "gps": {
+                            "lat": 50.087440865479,
+                            "lon": 14.463284033285
+                          },
+                          "custom": [
+                            {
+                              "type": "JTSK",
+                              "coordinates": {
+                                "x": 739831.1,
+                                "y": 1043425.38
+                              }
+                            }
+                          ]
+                        },
+                        "full": "Jeseniova 1151/55, 130 00 Praha 3"
+                      }
+                    },
+                    "addressOficial": {
+                      "data": {
+                        "country": "CZ",
+                        "street": "Jeseniova",
+                        "number": {
+                          "part1": "137",
+                          "part1Number": "137",
+                          "part1Letter": "null",
+                          "part2": "16",
+                          "part2Number": "16",
+                          "part2Letter": "null",
+                          "full": "137/16"
+                        },
+                        "streetWithNumber": "Jeseniova 1151/55",
+                        "city": "Praha",
+                        "zip": "13000",
+                        "full": "Jeseniova 1151/55 Praha 130000"
+                      }
+                    },
+                    "function": "jednatel",
+                    "birthDate": "1988-08-01",
+                    "registrationNumber": "null"
+                  }
+                ],
+                "decisions": ["Společnost zastupuje jednatel samostatně."]
+              }
+            ],
+            "capital": {
+              "value": {
+                "amount": "200000",
+                "currency": "CZK"
+              },
+              "shareholders": [
+                {
+                  "shareholder": "PAVEL HRDLIČKA , dat. nar. 14. listopadu 1990 V Zahradách 277, 751 11 Radslavice",
+                  "share": {
+                    "amount": "200000",
+                    "currency": "CZK",
+                    "percent": "100",
+                    "percentPaid": "100"
+                  },
+                  "info": ["Druh podílu: základní, se kterým nejsou spojené žádné zvláštní práva a povinnosti"]
+                }
+              ],
+              "stocks": ["100 ks akcie na jméno v listinné podobě ve jmenovité hodnotě 20 000 ,- Kč."]
+            },
+            "tradeLicences": [
+              {
+                "type": "Ohlašovací volná",
+                "name": "Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona",
+                "valid": {
+                  "from": "2016-04-15",
+                  "fromText": "Dnem zápisu do spolkového rejstříku.",
+                  "to": "2030-04-15",
+                  "toText": "Na dobu neurčitou."
+                },
+                "interrupted": {
+                  "from": "2021-08-15",
+                  "to": "2025-08-15"
+                },
+                "responsiblePerson": "Jan Novák",
+                "activitySubject": ["Broušení technického a šperkového kamene"]
+              }
+            ],
+            "vat": {
+              "status": "payer",
+              "reliability": {
+                "reliable": true,
+                "unreliableFrom": "2018-09-01"
+              },
+              "bankAccounts": [
+                {
+                  "number": "55567899/2010"
+                }
+              ],
+              "history": [
+                {
+                  "vatNumber": "CZ04997476",
+                  "registrationType": "payer",
+                  "validFrom": "2017-09-01",
+                  "validTo": "null",
+                  "isGroupRegistration": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "errors": []
+  },
+  "getCompanyData": {
+    "status": 200,
+    "request": {
+      "endpoint": "company/get",
+      "code": "gc0nCfcELaPSHH4Qo4UBaC7DbAj6G4",
+      "customId": "customer567914",
+      "query": {
+        "country": "CZ",
+        "registrationNumber": "4997476"
+      },
+      "options": {
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "includeTerminatedSubjects": false,
+        "zipFormat": false,
+        "cityFormat": "basic",
+        "countryFormat": "alpha2"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "results": [
+        {
+          "data": {
+            "country": "CZ",
+            "uuid": "",
+            "name": "Avantro s.r.o.",
+            "registrationNumber": "04997476",
+            "taxNumber": "CZ04997476",
+            "vatNumber": "CZ04997476",
+            "vatNumberSpecial": "CZ0581019",
+            "address": {
+              "data": {
+                "country": "CZ",
+                "region": "Hlavní město Praha",
+                "district": "Hlavní město Praha",
+                "cityDistrict": "Praha 6",
+                "cityDistrictSpecial": "Praha 6",
+                "cityPart": "Dejvice",
+                "cityAdministrative": "Kraków",
+                "cadastralArea": "Dejvice",
+                "ids": {
+                  "internal": "2070391",
+                  "external": "22349995",
+                  "region": "19",
+                  "discrict": "9999",
+                  "cityDistrictSpecial": "86",
+                  "cityDistrict": "500208",
+                  "cityPart": "400637",
+                  "cadastralArea": "730955",
+                  "city": "554782",
+                  "street": "554782"
+                },
+                "street": "Jeseniova",
+                "number": {
+                  "part1": "137",
+                  "part1Number": "137",
+                  "part1Letter": "null",
+                  "part2": "16",
+                  "part2Number": "16",
+                  "part2Letter": "null",
+                  "full": "137/16"
+                },
+                "streetWithNumber": "Jeseniova 1151/55",
+                "city": "Praha",
+                "zip": "13000",
+                "postOffice": {
+                  "name": "Praha 086"
+                },
+                "geometry": {
+                  "gps": {
+                    "lat": 50.087440865479,
+                    "lon": 14.463284033285
+                  },
+                  "custom": [
+                    {
+                      "type": "JTSK",
+                      "coordinates": {
+                        "x": 739831.1,
+                        "y": 1043425.38
+                      }
+                    }
+                  ]
+                },
+                "full": "Jeseniova 1151/55, 130 00 Praha 3"
+              }
+            },
+            "addressOfficial": {
+              "data": {
+                "country": "CZ",
+                "street": "Jeseniova",
+                "number": {
+                  "part1": "137",
+                  "part1Number": "137",
+                  "part1Letter": "null",
+                  "part2": "16",
+                  "part2Number": "16",
+                  "part2Letter": "null",
+                  "full": "137/16"
+                },
+                "streetWithNumber": "Jeseniova 1151/55",
+                "city": "Praha",
+                "zip": "13000",
+                "full": "Jeseniova 1151/55 Praha 130000"
+              }
+            },
+            "nace": [
+              {
+                "code": "74",
+                "name": "Ostatní profesní, vědecké a technické činnosti",
+                "isPrimary": false
+              }
+            ],
+            "databoxes": [
+              {
+                "code": "txutpba",
+                "name": "AVANTRO s.r.o.",
+                "receivingMessages": true
+              }
+            ],
+            "registrations": [
+              {
+                "type": "businessRegister",
+                "data": {
+                  "registrator": {
+                    "name": "Městský soud v Praze",
+                    "detail": "Územní pracoviště pro Prahu 8, Trojská 13a, PRAHA 8, tel. 266 013 111"
+                  },
+                  "reference": "C 256795"
+                }
+              }
+            ],
+            "legalForm": {
+              "code": "112",
+              "name": "Společnost s ručením omezeným."
+            },
+            "legalFormSpecific": {
+              "code": "null",
+              "name": "null"
+            },
+            "esa2010": {
+              "code": "11002",
+              "name": "Nefinanční podniky soukromé národní"
+            },
+            "dates": {
+              "created": "2016-04-15",
+              "terminated": "2016-04-15"
+            },
+            "employees": {
+              "count": "null",
+              "category": "1000-1499"
+            },
+            "insolvency": {
+              "history": [
+                {
+                  "reference": "65 INS 12632 / 2023",
+                  "dateFrom": "2021-08-01",
+                  "dateTo": "2025-08-01",
+                  "court": {
+                    "name": "Krajský soud v Hradci Králové."
+                  },
+                  "status": "NEVYRIZENA",
+                  "detailUrl": "https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=F"
+                }
+              ]
+            },
+            "businessPremises": [
+              {
+                "label": "Obchodní centrum Havlíčkův Brod.",
+                "address": {
+                  "full": "Nad Rybníkem 3169, 580 01,  Havlíčkův Brod"
+                },
+                "activitySubjects": "Zprostředkovatelská činnost"
+              }
+            ],
+            "authority": [
+              {
+                "name": "Statutární orgán",
+                "members": [
+                  {
+                    "name": "Pavel Hrdlička",
+                    "address": {
+                      "data": {
+                        "country": "CZ",
+                        "region": "Hlavní město Praha",
+                        "district": "Hlavní město Praha",
+                        "cityDistrict": "Praha 6",
+                        "cityDistrictSpecial": "Praha 6",
+                        "cityPart": "Dejvice",
+                        "cityAdministrative": "Kraków",
+                        "cadastralArea": "Dejvice",
+                        "ids": {
+                          "internal": "2070391",
+                          "external": "22349995",
+                          "region": "19",
+                          "discrict": "9999",
+                          "cityDistrictSpecial": "86",
+                          "cityDistrict": "500208",
+                          "cityPart": "400637",
+                          "cadastralArea": "730955",
+                          "city": "554782",
+                          "street": "554782"
+                        },
+                        "street": "Jeseniova",
+                        "number": {
+                          "part1": "137",
+                          "part1Number": "137",
+                          "part1Letter": "null",
+                          "part2": "16",
+                          "part2Number": "16",
+                          "part2Letter": "null",
+                          "full": "137/16"
+                        },
+                        "streetWithNumber": "Jeseniova 1151/55",
+                        "city": "Praha",
+                        "zip": "13000",
+                        "postOffice": {
+                          "name": "Praha 086"
+                        },
+                        "geometry": {
+                          "gps": {
+                            "lat": 50.087440865479,
+                            "lon": 14.463284033285
+                          },
+                          "custom": [
+                            {
+                              "type": "JTSK",
+                              "coordinates": {
+                                "x": 739831.1,
+                                "y": 1043425.38
+                              }
+                            }
+                          ]
+                        },
+                        "full": "Jeseniova 1151/55, 130 00 Praha 3"
+                      }
+                    },
+                    "addressOficial": {
+                      "data": {
+                        "country": "CZ",
+                        "street": "Jeseniova",
+                        "number": {
+                          "part1": "137",
+                          "part1Number": "137",
+                          "part1Letter": "null",
+                          "part2": "16",
+                          "part2Number": "16",
+                          "part2Letter": "null",
+                          "full": "137/16"
+                        },
+                        "streetWithNumber": "Jeseniova 1151/55",
+                        "city": "Praha",
+                        "zip": "13000",
+                        "full": "Jeseniova 1151/55 Praha 130000"
+                      }
+                    },
+                    "function": "jednatel",
+                    "birthDate": "1988-08-01",
+                    "registrationNumber": "null"
+                  }
+                ],
+                "decisions": ["Společnost zastupuje jednatel samostatně."]
+              }
+            ],
+            "capital": {
+              "value": {
+                "amount": "200000",
+                "currency": "CZK"
+              },
+              "shareholders": [
+                {
+                  "shareholder": "PAVEL HRDLIČKA , dat. nar. 14. listopadu 1990 V Zahradách 277, 751 11 Radslavice",
+                  "share": {
+                    "amount": "200000",
+                    "currency": "CZK",
+                    "percent": "100",
+                    "percentPaid": "100"
+                  },
+                  "info": ["Druh podílu: základní, se kterým nejsou spojené žádné zvláštní práva a povinnosti"]
+                }
+              ],
+              "stocks": ["100 ks akcie na jméno v listinné podobě ve jmenovité hodnotě 20 000 ,- Kč."]
+            },
+            "tradeLicences": [
+              {
+                "type": "Ohlašovací volná",
+                "name": "Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona",
+                "valid": {
+                  "from": "2016-04-15",
+                  "fromText": "Dnem zápisu do spolkového rejstříku.",
+                  "to": "2030-04-15",
+                  "toText": "Na dobu neurčitou."
+                },
+                "interrupted": {
+                  "from": "2021-08-15",
+                  "to": "2025-08-15"
+                },
+                "responsiblePerson": "Jan Novák",
+                "activitySubject": ["Broušení technického a šperkového kamene"]
+              }
+            ],
+            "vat": {
+              "status": "payer",
+              "reliability": {
+                "reliable": true,
+                "unreliableFrom": "2018-09-01"
+              },
+              "bankAccounts": [
+                {
+                  "number": "55567899/2010"
+                }
+              ],
+              "history": [
+                {
+                  "vatNumber": "CZ04997476",
+                  "registrationType": "payer",
+                  "validFrom": "2017-09-01",
+                  "validTo": "null",
+                  "isGroupRegistration": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "errors": []
+  }
+}

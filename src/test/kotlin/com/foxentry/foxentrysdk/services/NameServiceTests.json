@@ -1,0 +1,150 @@
+{
+  "nameValidation": {
+    "status": 200,
+    "request": {
+      "endpoint": "phone/validate",
+      "code": "gc0nCfcELaPSHH4Qo4UBaC7DbAj6G4",
+      "customId": "customer567914",
+      "query": {
+        "name": "Jan",
+        "surname": "Novák",
+        "nameSurname": "Jan Novák"
+      },
+      "options": {
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "acceptDegrees": false,
+        "acceptContext": false,
+        "validationDepth": "minimal",
+        "smartMode": false
+      },
+      "client": {
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "result": {
+        "isValid": true,
+        "proposal": "validWithSuggestion",
+        "data": {
+          "nameSurname": "Petr Novák",
+          "name": "Petr",
+          "surname": "Novák",
+          "context": ["ml."],
+          "degreesBefore": ["Ing."],
+          "degreesAfter": ["Ph.D."]
+        },
+        "details": [
+          {
+            "type": "name",
+            "value": "Petr",
+            "gender": "1",
+            "vocative": "Petře",
+            "nameDays": [
+              {
+                "country": "CZ",
+                "month": 6,
+                "day": 29
+              }
+            ]
+          }
+        ],
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ]
+      },
+      "resultCorrected": {
+        "isValid": true,
+        "data": {
+          "nameSurname": "Petr Novák",
+          "name": "Petr",
+          "surname": "Novák",
+          "context": ["ml."],
+          "degreesBefore": ["Ing."],
+          "degreesAfter": ["Ph.D."]
+        },
+        "details": [
+          {
+            "type": "name",
+            "value": "Petr",
+            "gender": "1",
+            "vocative": "Petře",
+            "nameDays": [
+              {
+                "country": "CZ",
+                "month": 6,
+                "day": 29
+              }
+            ]
+          }
+        ],
+        "fixes": [
+          {
+            "group": "FORMAT",
+            "type": "CHANGED",
+            "subtype": "CASE_SENSITIVITY",
+            "data": {
+              "typeFrom": "email",
+              "type": "email",
+              "valueFrom": "me@gmail.cz",
+              "value": "me@gmail.com"
+            }
+          }
+        ]
+      },
+      "suggestions": [
+        {
+          "isValid": true,
+          "data": {
+            "nameSurname": "Petr Novák",
+            "name": "Petr",
+            "surname": "Novák",
+            "context": ["ml."],
+            "degreesBefore": ["Ing."],
+            "degreesAfter": ["Ph.D."]
+          },
+          "details": [
+            {
+              "type": "name",
+              "value": "Petr",
+              "gender": "1",
+              "vocative": "Petře",
+              "nameDays": [
+                {
+                  "country": "CZ",
+                  "month": 6,
+                  "day": 29
+                }
+              ]
+            }
+          ],
+          "fixes": [
+            {
+              "group": "FORMAT",
+              "type": "CHANGED",
+              "subtype": "CASE_SENSITIVITY",
+              "data": {
+                "typeFrom": "email",
+                "type": "email",
+                "valueFrom": "me@gmail.cz",
+                "value": "me@gmail.com"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  }
+}

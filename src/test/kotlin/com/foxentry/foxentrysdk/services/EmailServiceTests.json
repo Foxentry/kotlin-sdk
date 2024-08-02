@@ -1,0 +1,151 @@
+{
+  "validateEmail": {
+    "status": 200,
+    "request": {
+      "endpoint": "location/validate",
+      "code": "internalrequestcode",
+      "customId": "customer567914",
+      "query": {
+        "email": "info@foxentry.cz"
+      },
+      "options": {
+        "validationType": "extended",
+        "acceptDisposableEmails": true,
+        "acceptFreemails": true
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "result": {
+        "isValid": true,
+        "proposal": "valid",
+        "data": {
+          "email": "me@gmali.com",
+          "user": "me",
+          "domain": "gmali.com"
+        },
+        "flags": {
+          "isCatchAllServer": false,
+          "isDisposableEmailLocation": false,
+          "isFreeMail": false
+        },
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ]
+      },
+      "resultCorrected": {
+        "isValid": true,
+        "data": {
+          "email": "me@gmali.com",
+          "user": "me",
+          "domain": "gmali.com"
+        },
+        "flags": {
+          "isCatchAllServer": false,
+          "isDisposableEmailLocation": false,
+          "isFreeMail": false
+        },
+        "fixes": [
+          {
+            "group": "FORMAT",
+            "type": "CHANGED",
+            "subtype": "CASE_SENSITIVITY",
+            "data": {
+              "typeFrom": "email",
+              "type": "email",
+              "valueFrom": "me@gmail.cz",
+              "value": "me@gmail.com"
+            }
+          }
+        ]
+      },
+      "suggestions": [
+        {
+          "isValid": true,
+          "data": {
+            "email": "me@gmali.com",
+            "user": "me",
+            "domain": "gmali.com"
+          },
+          "flags": {
+            "isCatchAllServer": false,
+            "isDisposableEmailLocation": false,
+            "isFreeMail": false
+          },
+          "fixes": [
+            {
+              "type": "SYNTAX",
+              "subtype": "AT_SIGN_DUPLICITY",
+              "data": {
+                "typeFrom": "email",
+                "type": "email",
+                "valueFrom": "me@email.COM",
+                "value": "me@gmail.com"
+              }
+            }
+          ],
+          "errors": [
+            {
+              "group": "SYNTAX",
+              "type": "CHARACTERS",
+              "subtype": "NOT_ALLOWED",
+              "severity": "critical",
+              "relatedTo": ["numberWithPrefix"],
+              "description": "Disallowed characters were used in the value."
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "emailSearch": {
+    "status": 200,
+    "request": {
+      "endpoint": "email/search",
+      "code": "internalrequestcode",
+      "customId": "customer567914",
+      "query": {
+        "value": "info@foxentry.com"
+      },
+      "options": {
+        "resultsLimit": 5
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "resultsCount": 1,
+      "results": [
+        {
+          "data": {
+            "email": "info@gmail.com",
+            "user": "info",
+            "domain": "gmail.com"
+          }
+        }
+      ]
+    },
+    "errors": []
+  }
+}
