@@ -1,7 +1,6 @@
 name: Test SDK
 on:
-  push:
-    - push
+  - push
 
 jobs:
   build_and_test:
