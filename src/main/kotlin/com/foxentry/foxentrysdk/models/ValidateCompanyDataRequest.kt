@@ -52,7 +52,6 @@ interface ValidateCompanyDataRequestOptions {
   val zipFormat: Boolean?
   val cityFormat: ValidateCompanyDataRequestOptionsCityFormat?
   val countryFormat: ValidateCompanyDataRequestOptionsCountryFormat?
-  val filterMode: ValidateCompanyDataRequestOptionsFilterMode?
 }
 
 data class ValidateCompanyDataRequestOptionsImpl(
@@ -63,7 +62,6 @@ data class ValidateCompanyDataRequestOptionsImpl(
     override val zipFormat: Boolean?,
     override val cityFormat: ValidateCompanyDataRequestOptionsCityFormat?,
     override val countryFormat: ValidateCompanyDataRequestOptionsCountryFormat?,
-    override val filterMode: ValidateCompanyDataRequestOptionsFilterMode?,
 ) : ValidateCompanyDataRequestOptions
 /** Data scope of returned data. */
 enum class ValidateCompanyDataRequestOptionsDataScope(@JsonValue val value: String) {
@@ -91,12 +89,4 @@ enum class ValidateCompanyDataRequestOptionsCountryFormat(@JsonValue val value: 
   LOCAL_SHORTENED("localShortened"),
   INTERNATIONAL("international"),
   INTERNATIONAL_SHORTENED("internationalShortened"),
-}
-/**
- * <b>Prefer</b> = prefer results matching the filter parameters, <b>limit</b> = limit to results
- * matching the filter parameters.
- */
-enum class ValidateCompanyDataRequestOptionsFilterMode(@JsonValue val value: String?) {
-  LIMIT("limit"),
-  PREFER("prefer"),
 }

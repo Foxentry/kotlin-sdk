@@ -8,6 +8,7 @@
 package com.foxentry.foxentrysdk.models
 
 import com.fasterxml.jackson.annotation.JsonProperty
+import com.fasterxml.jackson.annotation.JsonValue
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.foxentry.foxentrysdk.core.*
 
@@ -79,17 +80,39 @@ data class LocationValidationRequestModelQueryImpl(
 @JsonDeserialize(`as` = LocationValidationRequestModelOptionsImpl::class)
 interface LocationValidationRequestModelOptions : LocationRequestOptions {
   val acceptPostOfficeAsCity: Boolean?
+  val countryFormat: LocationValidationRequestModelOptionsCountryFormat?
+  val filterMode: LocationValidationRequestModelOptionsFilterMode?
 }
 
 data class LocationValidationRequestModelOptionsImpl(
     override val acceptPostOfficeAsCity: Boolean?,
+    override val countryFormat: LocationValidationRequestModelOptionsCountryFormat?,
+    override val filterMode: LocationValidationRequestModelOptionsFilterMode?,
     override val dataScope: LocationRequestOptionsDataScope?,
     override val dataSource: List<String?>?,
     override val resultsLimit: Int?,
     override val zipFormat: Boolean?,
-    override val cityFormat: LocationRequestOptionsCityFormat?,
-    override val countryFormat: LocationRequestOptionsCountryFormat?,
-    override val filterMode: LocationRequestOptionsFilterMode?
+    override val cityFormat: LocationRequestOptionsCityFormat?
 ) : LocationValidationRequestModelOptions
+/**
+ * This option determines the format in which the country is returned. Choices include local and
+ * international variants with their shortened counterparts as well as ISO 3166 alpha codes.
+ */
+enum class LocationValidationRequestModelOptionsCountryFormat(@JsonValue val value: String) {
+  ALPHA2("alpha2"),
+  ALPHA3("alpha3"),
+  LOCAL("local"),
+  LOCAL_SHORTENED("localShortened"),
+  INTERNATIONAL("international"),
+  INTERNATIONAL_SHORTENED("internationalShortened"),
+}
+/**
+ * <b>Prefer</b> = prefer results matching the filter parameters, <b>limit</b> = limit to results
+ * matching the filter parameters.
+ */
+enum class LocationValidationRequestModelOptionsFilterMode(@JsonValue val value: String?) {
+  LIMIT("limit"),
+  PREFER("prefer"),
+}
 
 typealias LocationValidationErrors = Any

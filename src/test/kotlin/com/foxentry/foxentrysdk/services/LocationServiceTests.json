@@ -26,9 +26,9 @@
         "resultsLimit": 10,
         "zipFormat": false,
         "cityFormat": "basic",
+        "acceptPostOfficeAsCity": true,
         "countryFormat": "alpha2",
-        "filterMode": "limit",
-        "acceptPostOfficeAsCity": true
+        "filterMode": "limit"
       },
       "client": {
         "ip": "127.0.1.1",
@@ -303,8 +303,8 @@
         "filterAcceptAlternatives": true,
         "filterExactMatch": true,
         "zipFormat": false,
-        "cityFormat": "basic",
-        "countryFormat": "alpha2"
+        "countryFormat": "alpha2",
+        "cityFormat": "basic"
       },
       "client": {
         "ip": "127.0.1.1",

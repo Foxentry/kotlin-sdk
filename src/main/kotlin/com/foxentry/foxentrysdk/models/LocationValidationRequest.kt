@@ -70,7 +70,5 @@ data class LocationValidationRequestOptionsImpl(
     override val dataSource: List<String?>?,
     override val resultsLimit: Int?,
     override val zipFormat: Boolean?,
-    override val cityFormat: LocationRequestOptionsCityFormat?,
-    override val countryFormat: LocationRequestOptionsCountryFormat?,
-    override val filterMode: LocationRequestOptionsFilterMode?
+    override val cityFormat: LocationRequestOptionsCityFormat?
 ) : LocationValidationRequestOptions

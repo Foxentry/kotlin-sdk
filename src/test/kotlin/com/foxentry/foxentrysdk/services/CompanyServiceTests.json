@@ -20,7 +20,8 @@
         "zipFormat": false,
         "cityFormat": "basic",
         "countryFormat": "alpha2",
-        "filterMode": "limit"
+        "filterMode": "limit",
+        "legalFormType": "any"
       },
       "client": {
         "ip": "127.0.1.1",
@@ -1031,7 +1032,8 @@
         "filterExactMatch": true,
         "zipFormat": false,
         "cityFormat": "basic",
-        "countryFormat": "alpha2"
+        "countryFormat": "alpha2",
+        "legalFormType": "any"
       },
       "client": {
         "ip": "127.0.1.1",

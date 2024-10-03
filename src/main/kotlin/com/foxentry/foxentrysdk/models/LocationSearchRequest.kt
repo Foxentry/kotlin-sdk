@@ -16,14 +16,14 @@ import com.foxentry.foxentrysdk.core.*
 interface LocationSearchRequest {
   val customId: String?
   val query: LocationSearchRequestQuery
-  val options: LocationRequestOptionsSearch?
+  val options: LocationSearchRequestOptions?
   val client: ClientRequest?
 }
 
 data class LocationSearchRequestImpl(
     override val customId: String?,
     override val query: LocationSearchRequestQuery,
-    override val options: LocationRequestOptionsSearch?,
+    override val options: LocationSearchRequestOptions?,
     override val client: ClientRequest?,
 ) : LocationSearchRequest
 

@@ -31,13 +31,13 @@ data class LocationSearchImpl(
 @JsonDeserialize(`as` = LocationSearchRequestModelImpl::class)
 interface LocationSearchRequestModel : GlobalRequest {
   val query: LocationSearchRequestModelQuery?
-  val options: LocationRequestOptionsSearch?
+  val options: LocationSearchRequestOptions?
   val client: ClientRequest?
 }
 
 data class LocationSearchRequestModelImpl(
     override val query: LocationSearchRequestModelQuery?,
-    override val options: LocationRequestOptionsSearch?,
+    override val options: LocationSearchRequestOptions?,
     override val client: ClientRequest?,
     override val endpoint: String,
     override val code: String,

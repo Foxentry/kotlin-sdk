@@ -12,36 +12,36 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.foxentry.foxentrysdk.core.*
 
 /** Query options. */
-@JsonDeserialize(`as` = LocationRequestOptionsSearchImpl::class)
-interface LocationRequestOptionsSearch {
-  val dataScope: LocationRequestOptionsSearchDataScope?
+@JsonDeserialize(`as` = LocationSearchRequestOptionsImpl::class)
+interface LocationSearchRequestOptions {
+  val dataScope: LocationSearchRequestOptionsDataScope?
   val dataSource: List<String?>?
   val resultsLimit: Int?
   val allowPartialResults: Boolean?
-  val filterMode: LocationRequestOptionsSearchFilterMode?
+  val filterMode: LocationSearchRequestOptionsFilterMode?
   val filterAcceptFormat: Boolean?
   val filterAcceptAlternatives: Boolean?
   val filterExactMatch: Boolean?
   val zipFormat: Boolean?
-  val cityFormat: LocationRequestOptionsSearchCityFormat?
-  val countryFormat: LocationRequestOptionsSearchCountryFormat?
+  val countryFormat: LocationSearchRequestOptionsCountryFormat?
+  val cityFormat: LocationSearchRequestOptionsCityFormat?
 }
 
-data class LocationRequestOptionsSearchImpl(
-    override val dataScope: LocationRequestOptionsSearchDataScope?,
+data class LocationSearchRequestOptionsImpl(
+    override val dataScope: LocationSearchRequestOptionsDataScope?,
     override val dataSource: List<String?>?,
     override val resultsLimit: Int?,
     override val allowPartialResults: Boolean?,
-    override val filterMode: LocationRequestOptionsSearchFilterMode?,
+    override val filterMode: LocationSearchRequestOptionsFilterMode?,
     override val filterAcceptFormat: Boolean?,
     override val filterAcceptAlternatives: Boolean?,
     override val filterExactMatch: Boolean?,
     override val zipFormat: Boolean?,
-    override val cityFormat: LocationRequestOptionsSearchCityFormat?,
-    override val countryFormat: LocationRequestOptionsSearchCountryFormat?,
-) : LocationRequestOptionsSearch
+    override val countryFormat: LocationSearchRequestOptionsCountryFormat?,
+    override val cityFormat: LocationSearchRequestOptionsCityFormat?,
+) : LocationSearchRequestOptions
 /** Data scope of returned data. */
-enum class LocationRequestOptionsSearchDataScope(@JsonValue val value: String) {
+enum class LocationSearchRequestOptionsDataScope(@JsonValue val value: String) {
   BASIC("basic"),
   FULL("full"),
 }
@@ -49,28 +49,28 @@ enum class LocationRequestOptionsSearchDataScope(@JsonValue val value: String) {
  * <b>Prefer</b> = prefer results matching the filter parameters, <b>limit</b> = limit to results
  * matching the filter parameters.
  */
-enum class LocationRequestOptionsSearchFilterMode(@JsonValue val value: String?) {
+enum class LocationSearchRequestOptionsFilterMode(@JsonValue val value: String?) {
   LIMIT("limit"),
   PREFER("prefer"),
-}
-/**
- * This option determines the format in which the city is returned. <b>Minimal</b> = Praha,
- * <b>basic</b> = Praha 8, <b>extended</b> = Praha 8 - Karlín.
- */
-enum class LocationRequestOptionsSearchCityFormat(@JsonValue val value: String) {
-  MINIMAL("minimal"),
-  BASIC("basic"),
-  EXTENDED("extended"),
 }
 /**
  * This option determines the format in which the country is returned. Choices include local and
  * international variants with their shortened counterparts as well as ISO 3166 alpha codes.
  */
-enum class LocationRequestOptionsSearchCountryFormat(@JsonValue val value: String) {
+enum class LocationSearchRequestOptionsCountryFormat(@JsonValue val value: String) {
   ALPHA2("alpha2"),
   ALPHA3("alpha3"),
   LOCAL("local"),
   LOCAL_SHORTENED("localShortened"),
   INTERNATIONAL("international"),
   INTERNATIONAL_SHORTENED("internationalShortened"),
+}
+/**
+ * This option determines the format in which the city is returned. <b>Minimal</b> = Praha,
+ * <b>basic</b> = Praha 8, <b>extended</b> = Praha 8 - Karlín.
+ */
+enum class LocationSearchRequestOptionsCityFormat(@JsonValue val value: String) {
+  MINIMAL("minimal"),
+  BASIC("basic"),
+  EXTENDED("extended"),
 }

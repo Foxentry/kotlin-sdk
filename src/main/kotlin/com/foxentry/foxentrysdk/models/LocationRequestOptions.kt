@@ -19,8 +19,6 @@ interface LocationRequestOptions {
   val resultsLimit: Int?
   val zipFormat: Boolean?
   val cityFormat: LocationRequestOptionsCityFormat?
-  val countryFormat: LocationRequestOptionsCountryFormat?
-  val filterMode: LocationRequestOptionsFilterMode?
 }
 
 data class LocationRequestOptionsImpl(
@@ -29,8 +27,6 @@ data class LocationRequestOptionsImpl(
     override val resultsLimit: Int?,
     override val zipFormat: Boolean?,
     override val cityFormat: LocationRequestOptionsCityFormat?,
-    override val countryFormat: LocationRequestOptionsCountryFormat?,
-    override val filterMode: LocationRequestOptionsFilterMode?,
 ) : LocationRequestOptions
 /** Data scope of returned data. */
 enum class LocationRequestOptionsDataScope(@JsonValue val value: String) {
@@ -45,24 +41,4 @@ enum class LocationRequestOptionsCityFormat(@JsonValue val value: String) {
   MINIMAL("minimal"),
   BASIC("basic"),
   EXTENDED("extended"),
-}
-/**
- * This option determines the format in which the country is returned. Choices include local and
- * international variants with their shortened counterparts as well as ISO 3166 alpha codes.
- */
-enum class LocationRequestOptionsCountryFormat(@JsonValue val value: String) {
-  ALPHA2("alpha2"),
-  ALPHA3("alpha3"),
-  LOCAL("local"),
-  LOCAL_SHORTENED("localShortened"),
-  INTERNATIONAL("international"),
-  INTERNATIONAL_SHORTENED("internationalShortened"),
-}
-/**
- * <b>Prefer</b> = prefer results matching the filter parameters, <b>limit</b> = limit to results
- * matching the filter parameters.
- */
-enum class LocationRequestOptionsFilterMode(@JsonValue val value: String?) {
-  LIMIT("limit"),
-  PREFER("prefer"),
 }

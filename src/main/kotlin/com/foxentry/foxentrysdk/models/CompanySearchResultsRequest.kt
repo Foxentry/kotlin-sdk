@@ -84,6 +84,7 @@ interface CompanySearchResultsRequestOptions {
   val zipFormat: Boolean?
   val cityFormat: CompanySearchResultsRequestOptionsCityFormat?
   val countryFormat: CompanySearchResultsRequestOptionsCountryFormat?
+  val legalFormType: CompanySearchResultsRequestOptionsLegalFormType?
 }
 
 data class CompanySearchResultsRequestOptionsImpl(
@@ -98,6 +99,7 @@ data class CompanySearchResultsRequestOptionsImpl(
     override val zipFormat: Boolean?,
     override val cityFormat: CompanySearchResultsRequestOptionsCityFormat?,
     override val countryFormat: CompanySearchResultsRequestOptionsCountryFormat?,
+    override val legalFormType: CompanySearchResultsRequestOptionsLegalFormType?,
 ) : CompanySearchResultsRequestOptions
 /** Data scope of returned data. */
 enum class CompanySearchResultsRequestOptionsDataScope(@JsonValue val value: String) {
@@ -133,4 +135,10 @@ enum class CompanySearchResultsRequestOptionsCountryFormat(@JsonValue val value:
   LOCAL_SHORTENED("localShortened"),
   INTERNATIONAL("international"),
   INTERNATIONAL_SHORTENED("internationalShortened"),
+}
+/** This option filters results by the legal form type. */
+enum class CompanySearchResultsRequestOptionsLegalFormType(@JsonValue val value: String?) {
+  JURIDICAL("juridical"),
+  PHYSICAL("physical"),
+  ANY("any"),
 }

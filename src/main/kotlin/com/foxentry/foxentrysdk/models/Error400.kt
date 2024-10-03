@@ -84,6 +84,12 @@ class Error400ErrorsDeserializer : StdDeserializer<Error400Errors>(Error400Error
       firstError = firstError ?: e
     }
     try {
+      return Error400Errors.Error400RequestQueryParameterNotSupportedForQuery(
+          mapper.convertValue(node, Error400RequestQueryParameterNotSupportedForQuery::class.java))
+    } catch (e: Exception) {
+      firstError = firstError ?: e
+    }
+    try {
       return Error400Errors.Error400RequestOptionsParameterCombination(
           mapper.convertValue(node, Error400RequestOptionsParameterCombination::class.java))
     } catch (e: Exception) {
@@ -151,6 +157,13 @@ sealed interface Error400Errors {
       @JsonIgnore val _0: com.foxentry.foxentrysdk.models.Error400RequestQueryParameterCombination
   ) :
       com.foxentry.foxentrysdk.models.Error400RequestQueryParameterCombination by _0,
+      Error400Errors
+
+  data class Error400RequestQueryParameterNotSupportedForQuery(
+      @JsonIgnore
+      val _0: com.foxentry.foxentrysdk.models.Error400RequestQueryParameterNotSupportedForQuery
+  ) :
+      com.foxentry.foxentrysdk.models.Error400RequestQueryParameterNotSupportedForQuery by _0,
       Error400Errors
 
   data class Error400RequestOptionsParameterCombination(

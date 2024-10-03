@@ -57,6 +57,7 @@ interface ValidateCompanyDataResultsRequestOptions {
   val cityFormat: ValidateCompanyDataResultsRequestOptionsCityFormat?
   val countryFormat: ValidateCompanyDataResultsRequestOptionsCountryFormat?
   val filterMode: ValidateCompanyDataResultsRequestOptionsFilterMode?
+  val legalFormType: ValidateCompanyDataResultsRequestOptionsLegalFormType?
 }
 
 data class ValidateCompanyDataResultsRequestOptionsImpl(
@@ -68,6 +69,7 @@ data class ValidateCompanyDataResultsRequestOptionsImpl(
     override val cityFormat: ValidateCompanyDataResultsRequestOptionsCityFormat?,
     override val countryFormat: ValidateCompanyDataResultsRequestOptionsCountryFormat?,
     override val filterMode: ValidateCompanyDataResultsRequestOptionsFilterMode?,
+    override val legalFormType: ValidateCompanyDataResultsRequestOptionsLegalFormType?,
 ) : ValidateCompanyDataResultsRequestOptions
 /** Data scope of returned data. */
 enum class ValidateCompanyDataResultsRequestOptionsDataScope(@JsonValue val value: String) {
@@ -103,4 +105,10 @@ enum class ValidateCompanyDataResultsRequestOptionsCountryFormat(@JsonValue val 
 enum class ValidateCompanyDataResultsRequestOptionsFilterMode(@JsonValue val value: String?) {
   LIMIT("limit"),
   PREFER("prefer"),
+}
+/** This option filters results by the legal form type. */
+enum class ValidateCompanyDataResultsRequestOptionsLegalFormType(@JsonValue val value: String?) {
+  JURIDICAL("juridical"),
+  PHYSICAL("physical"),
+  ANY("any"),
 }

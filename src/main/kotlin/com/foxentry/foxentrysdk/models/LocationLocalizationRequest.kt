@@ -49,9 +49,7 @@ data class LocationLocalizationRequestOptionsImpl(
     override val dataSource: List<String?>?,
     override val resultsLimit: Int?,
     override val zipFormat: Boolean?,
-    override val cityFormat: LocationRequestOptionsCityFormat?,
-    override val countryFormat: LocationRequestOptionsCountryFormat?,
-    override val filterMode: LocationRequestOptionsFilterMode?
+    override val cityFormat: LocationRequestOptionsCityFormat?
 ) : LocationLocalizationRequestOptions
 /**
  * Additional information about your user (from whom you've obtained the data sent in query) in
