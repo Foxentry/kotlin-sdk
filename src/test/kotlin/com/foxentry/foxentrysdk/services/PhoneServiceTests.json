@@ -1,0 +1,158 @@
+{
+  "validatePhoneNumber": {
+    "status": 200,
+    "request": {
+      "endpoint": "phone/validate",
+      "code": "gc0nCfcELaPSHH4Qo4UBaC7DbAj6G4",
+      "customId": "customer567914",
+      "query": {
+        "prefix": "+420",
+        "number": "777555666",
+        "numberWithPrefix": "+420777555666"
+      },
+      "options": {
+        "validationType": "extended",
+        "allowedPrefixes": ["+420"],
+        "formatNumber": false,
+        "preferredPrefixes": ["+420"],
+        "defaultPrefix": "+420"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "result": {
+        "isValid": true,
+        "proposal": "invalidWithCorrection",
+        "data": {
+          "country": {
+            "code": "CZ",
+            "prefix": "+420"
+          },
+          "prefix": "+420",
+          "number": "775111222",
+          "numberWithPrefix": "+420775111222",
+          "carrier": {
+            "name": "Vodafone",
+            "type": "landline"
+          },
+          "format": {
+            "national": "775111222",
+            "nationalFormatted": "775 111 222",
+            "international": "+420775111222",
+            "internationalFormatted": "+420 775 111 222"
+          }
+        },
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ]
+      },
+      "resultCorrected": {
+        "isValid": true,
+        "data": {
+          "country": {
+            "code": "CZ",
+            "prefix": "+420"
+          },
+          "prefix": "+420",
+          "number": "775111222",
+          "numberWithPrefix": "+420775111222",
+          "carrier": {
+            "name": "Vodafone",
+            "type": "landline"
+          },
+          "format": {
+            "national": "775111222",
+            "nationalFormatted": "775 111 222",
+            "international": "+420775111222",
+            "internationalFormatted": "+420 775 111 222"
+          }
+        },
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ],
+        "fixes": [
+          {
+            "group": "FORMAT",
+            "type": "CHANGED",
+            "subtype": "CASE_SENSITIVITY",
+            "data": {
+              "typeFrom": "email",
+              "type": "email",
+              "valueFrom": "me@gmail.cz",
+              "value": "me@gmail.com"
+            }
+          }
+        ]
+      },
+      "suggestions": [
+        {
+          "isValid": true,
+          "data": {
+            "country": {
+              "code": "CZ",
+              "prefix": "+420"
+            },
+            "prefix": "+420",
+            "number": "775111222",
+            "numberWithPrefix": "+420775111222",
+            "carrier": {
+              "name": "Vodafone",
+              "type": "landline"
+            },
+            "format": {
+              "national": "775111222",
+              "nationalFormatted": "775 111 222",
+              "international": "+420775111222",
+              "internationalFormatted": "+420 775 111 222"
+            }
+          },
+          "errors": [
+            {
+              "group": "SYNTAX",
+              "type": "CHARACTERS",
+              "subtype": "NOT_ALLOWED",
+              "severity": "critical",
+              "relatedTo": ["numberWithPrefix"],
+              "description": "Disallowed characters were used in the value."
+            }
+          ],
+          "fixes": [
+            {
+              "group": "FORMAT",
+              "type": "CHANGED",
+              "subtype": "CASE_SENSITIVITY",
+              "data": {
+                "typeFrom": "email",
+                "type": "email",
+                "valueFrom": "me@gmail.cz",
+                "value": "me@gmail.com"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  }
+}

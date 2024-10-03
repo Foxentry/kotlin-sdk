@@ -1,0 +1,557 @@
+{
+  "locationValidation": {
+    "status": 200,
+    "request": {
+      "endpoint": "location/validate",
+      "code": "internalrequestcode",
+      "customId": "customer567914",
+      "query": {
+        "street": "Jeseniova",
+        "streetWithNumber": "Jeseniova 55",
+        "number.full": "1151/55d",
+        "number.part1": "1151",
+        "number.part1Number": "1151",
+        "number.part1Letter": "null",
+        "number.part2": "55d",
+        "number.part2Number": "55",
+        "number.part2Letter": "d",
+        "city": "Praha",
+        "zip": "130 00",
+        "full": "Jeseniova 2770/56d, 130 00 Praha",
+        "country": "CZ"
+      },
+      "options": {
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "resultsLimit": 10,
+        "zipFormat": false,
+        "cityFormat": "basic",
+        "acceptPostOfficeAsCity": true,
+        "countryFormat": "alpha2",
+        "filterMode": "limit"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "result": {
+        "isValid": true,
+        "proposal": "invalidWithCorrection",
+        "data": {
+          "country": "CZ",
+          "region": "Hlavní město Praha",
+          "district": "Hlavní město Praha",
+          "cityDistrict": "Praha 6",
+          "cityDistrictSpecial": "Praha 6",
+          "cityPart": "Dejvice",
+          "cityAdministrative": "Kraków",
+          "cadastralArea": "Dejvice",
+          "ids": {
+            "internal": "2070391",
+            "external": "22349995",
+            "region": "19",
+            "discrict": "9999",
+            "cityDistrictSpecial": "86",
+            "cityDistrict": "500208",
+            "cityPart": "400637",
+            "cadastralArea": "730955",
+            "city": "554782",
+            "street": "554782"
+          },
+          "street": "Jeseniova",
+          "number": {
+            "part1": "137",
+            "part1Number": "137",
+            "part1Letter": "null",
+            "part2": "16",
+            "part2Number": "16",
+            "part2Letter": "null",
+            "full": "137/16"
+          },
+          "streetWithNumber": "Jeseniova 1151/55",
+          "city": "Praha",
+          "zip": "13000",
+          "postOffice": {
+            "name": "Praha 086"
+          },
+          "geometry": {
+            "gps": {
+              "lat": 50.087440865479,
+              "lon": 14.463284033285
+            },
+            "custom": [
+              {
+                "type": "JTSK",
+                "coordinates": {
+                  "x": 739831.1,
+                  "y": 1043425.38
+                }
+              }
+            ]
+          },
+          "full": "Jeseniova 1151/55, 130 00 Praha 3"
+        },
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ]
+      },
+      "resultCorrected": {
+        "isValid": true,
+        "data": {
+          "country": "CZ",
+          "region": "Hlavní město Praha",
+          "district": "Hlavní město Praha",
+          "cityDistrict": "Praha 6",
+          "cityDistrictSpecial": "Praha 6",
+          "cityPart": "Dejvice",
+          "cityAdministrative": "Kraków",
+          "cadastralArea": "Dejvice",
+          "ids": {
+            "internal": "2070391",
+            "external": "22349995",
+            "region": "19",
+            "discrict": "9999",
+            "cityDistrictSpecial": "86",
+            "cityDistrict": "500208",
+            "cityPart": "400637",
+            "cadastralArea": "730955",
+            "city": "554782",
+            "street": "554782"
+          },
+          "street": "Jeseniova",
+          "number": {
+            "part1": "137",
+            "part1Number": "137",
+            "part1Letter": "null",
+            "part2": "16",
+            "part2Number": "16",
+            "part2Letter": "null",
+            "full": "137/16"
+          },
+          "streetWithNumber": "Jeseniova 1151/55",
+          "city": "Praha",
+          "zip": "13000",
+          "postOffice": {
+            "name": "Praha 086"
+          },
+          "geometry": {
+            "gps": {
+              "lat": 50.087440865479,
+              "lon": 14.463284033285
+            },
+            "custom": [
+              {
+                "type": "JTSK",
+                "coordinates": {
+                  "x": 739831.1,
+                  "y": 1043425.38
+                }
+              }
+            ]
+          },
+          "full": "Jeseniova 1151/55, 130 00 Praha 3"
+        },
+        "errors": [
+          {
+            "group": "SYNTAX",
+            "type": "CHARACTERS",
+            "subtype": "NOT_ALLOWED",
+            "severity": "critical",
+            "relatedTo": ["numberWithPrefix"],
+            "description": "Disallowed characters were used in the value."
+          }
+        ],
+        "fixes": [
+          {
+            "group": "FORMAT",
+            "type": "CHANGED",
+            "subtype": "CASE_SENSITIVITY",
+            "data": {
+              "typeFrom": "email",
+              "type": "email",
+              "valueFrom": "me@gmail.cz",
+              "value": "me@gmail.com"
+            }
+          }
+        ]
+      },
+      "suggestions": [
+        {
+          "isValid": true,
+          "data": {
+            "country": "CZ",
+            "region": "Hlavní město Praha",
+            "district": "Hlavní město Praha",
+            "cityDistrict": "Praha 6",
+            "cityDistrictSpecial": "Praha 6",
+            "cityPart": "Dejvice",
+            "cityAdministrative": "Kraków",
+            "cadastralArea": "Dejvice",
+            "ids": {
+              "internal": "2070391",
+              "external": "22349995",
+              "region": "19",
+              "discrict": "9999",
+              "cityDistrictSpecial": "86",
+              "cityDistrict": "500208",
+              "cityPart": "400637",
+              "cadastralArea": "730955",
+              "city": "554782",
+              "street": "554782"
+            },
+            "street": "Jeseniova",
+            "number": {
+              "part1": "137",
+              "part1Number": "137",
+              "part1Letter": "null",
+              "part2": "16",
+              "part2Number": "16",
+              "part2Letter": "null",
+              "full": "137/16"
+            },
+            "streetWithNumber": "Jeseniova 1151/55",
+            "city": "Praha",
+            "zip": "13000",
+            "postOffice": {
+              "name": "Praha 086"
+            },
+            "geometry": {
+              "gps": {
+                "lat": 50.087440865479,
+                "lon": 14.463284033285
+              },
+              "custom": [
+                {
+                  "type": "JTSK",
+                  "coordinates": {
+                    "x": 739831.1,
+                    "y": 1043425.38
+                  }
+                }
+              ]
+            },
+            "full": "Jeseniova 1151/55, 130 00 Praha 3"
+          },
+          "fixes": [
+            {
+              "group": "FORMAT",
+              "type": "CHANGED",
+              "subtype": "CASE_SENSITIVITY",
+              "data": {
+                "typeFrom": "email",
+                "type": "email",
+                "valueFrom": "me@gmail.cz",
+                "value": "me@gmail.com"
+              }
+            }
+          ],
+          "errors": [
+            {
+              "group": "SYNTAX",
+              "type": "CHARACTERS",
+              "subtype": "NOT_ALLOWED",
+              "severity": "critical",
+              "relatedTo": ["numberWithPrefix"],
+              "description": "Disallowed characters were used in the value."
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "locationSearch": {
+    "status": 200,
+    "request": {
+      "endpoint": "location/search",
+      "code": "internalrequestcode",
+      "customId": "customer567914",
+      "query": {
+        "type": "street",
+        "value": "",
+        "filter": {
+          "street": "Jeseniova",
+          "streetWithNumber": "Jeseniova 55",
+          "number.full": "1151/55d",
+          "number.part1": "1151",
+          "number.part2": "55d",
+          "city": "Praha",
+          "zip": "130 00",
+          "country": "CZ"
+        }
+      },
+      "options": {
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "resultsLimit": 10,
+        "allowPartialResults": true,
+        "filterMode": "limit",
+        "filterAcceptFormat": true,
+        "filterAcceptAlternatives": true,
+        "filterExactMatch": true,
+        "zipFormat": false,
+        "countryFormat": "alpha2",
+        "cityFormat": "basic"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "resultsCount": 0,
+      "results": [
+        {
+          "data": {
+            "country": "CZ",
+            "region": "Hlavní město Praha",
+            "district": "Hlavní město Praha",
+            "cityDistrict": "Praha 6",
+            "cityDistrictSpecial": "Praha 6",
+            "cityPart": "Dejvice",
+            "cityAdministrative": "Kraków",
+            "cadastralArea": "Dejvice",
+            "ids": {
+              "internal": "2070391",
+              "external": "22349995",
+              "region": "19",
+              "discrict": "9999",
+              "cityDistrictSpecial": "86",
+              "cityDistrict": "500208",
+              "cityPart": "400637",
+              "cadastralArea": "730955",
+              "city": "554782",
+              "street": "554782"
+            },
+            "street": "Jeseniova",
+            "number": {
+              "part1": "137",
+              "part1Number": "137",
+              "part1Letter": "null",
+              "part2": "16",
+              "part2Number": "16",
+              "part2Letter": "null",
+              "full": "137/16"
+            },
+            "streetWithNumber": "Jeseniova 1151/55",
+            "city": "Praha",
+            "zip": "13000",
+            "postOffice": {
+              "name": "Praha 086"
+            },
+            "geometry": {
+              "gps": {
+                "lat": 50.087440865479,
+                "lon": 14.463284033285
+              },
+              "custom": [
+                {
+                  "type": "JTSK",
+                  "coordinates": {
+                    "x": 739831.1,
+                    "y": 1043425.38
+                  }
+                }
+              ]
+            },
+            "full": "Jeseniova 1151/55, 130 00 Praha 3"
+          }
+        }
+      ]
+    },
+    "errors": []
+  },
+  "locationGet": {
+    "status": 200,
+    "request": {
+      "endpoint": "location/get",
+      "code": "internalrequestcode",
+      "customId": "customer567914",
+      "query": {
+        "country": "CZ",
+        "id": "d2ade877-1e95-4a83-baa6-5431ce5b3ca8"
+      },
+      "options": {
+        "idType": "internal",
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "zipFormat": false,
+        "cityFormat": "basic",
+        "countryFormat": "alpha2"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ",
+        "location": {
+          "lat": 50.0628,
+          "lon": 13.9271
+        }
+      }
+    },
+    "response": {
+      "results": [
+        {
+          "data": {
+            "country": "CZ",
+            "region": "Hlavní město Praha",
+            "district": "Hlavní město Praha",
+            "cityDistrict": "Praha 6",
+            "cityDistrictSpecial": "Praha 6",
+            "cityPart": "Dejvice",
+            "cityAdministrative": "Kraków",
+            "cadastralArea": "Dejvice",
+            "ids": {
+              "internal": "2070391",
+              "external": "22349995",
+              "region": "19",
+              "discrict": "9999",
+              "cityDistrictSpecial": "86",
+              "cityDistrict": "500208",
+              "cityPart": "400637",
+              "cadastralArea": "730955",
+              "city": "554782",
+              "street": "554782"
+            },
+            "street": "Jeseniova",
+            "number": {
+              "part1": "137",
+              "part1Number": "137",
+              "part1Letter": "null",
+              "part2": "16",
+              "part2Number": "16",
+              "part2Letter": "null",
+              "full": "137/16"
+            },
+            "streetWithNumber": "Jeseniova 1151/55",
+            "city": "Praha",
+            "zip": "13000",
+            "postOffice": {
+              "name": "Praha 086"
+            },
+            "geometry": {
+              "gps": {
+                "lat": 50.087440865479,
+                "lon": 14.463284033285
+              },
+              "custom": [
+                {
+                  "type": "JTSK",
+                  "coordinates": {
+                    "x": 739831.1,
+                    "y": 1043425.38
+                  }
+                }
+              ]
+            },
+            "full": "Jeseniova 1151/55, 130 00 Praha 3"
+          }
+        }
+      ]
+    },
+    "errors": []
+  },
+  "locationLocalization": {
+    "status": 200,
+    "request": {
+      "endpoint": "location/localize",
+      "code": "internalrequestcode",
+      "customId": "customer567914",
+      "query": {
+        "lat": 50.0628,
+        "lon": 13.9271
+      },
+      "options": {
+        "dataScope": "full",
+        "dataSource": ["CZ"],
+        "resultsLimit": 10,
+        "radius": 50,
+        "acceptNearest": false,
+        "zipFormat": false,
+        "cityFormat": "basic"
+      },
+      "client": {
+        "ip": "127.0.1.1",
+        "country": "CZ"
+      }
+    },
+    "response": {
+      "resultsCount": 1,
+      "results": [
+        {
+          "data": {
+            "country": "CZ",
+            "region": "Hlavní město Praha",
+            "district": "Hlavní město Praha",
+            "cityDistrict": "Praha 6",
+            "cityDistrictSpecial": "Praha 6",
+            "cityPart": "Dejvice",
+            "cityAdministrative": "Kraków",
+            "cadastralArea": "Dejvice",
+            "ids": {
+              "internal": "2070391",
+              "external": "22349995",
+              "region": "19",
+              "discrict": "9999",
+              "cityDistrictSpecial": "86",
+              "cityDistrict": "500208",
+              "cityPart": "400637",
+              "cadastralArea": "730955",
+              "city": "554782",
+              "street": "554782"
+            },
+            "street": "Jeseniova",
+            "number": {
+              "part1": "137",
+              "part1Number": "137",
+              "part1Letter": "null",
+              "part2": "16",
+              "part2Number": "16",
+              "part2Letter": "null",
+              "full": "137/16"
+            },
+            "streetWithNumber": "Jeseniova 1151/55",
+            "city": "Praha",
+            "zip": "13000",
+            "postOffice": {
+              "name": "Praha 086"
+            },
+            "geometry": {
+              "gps": {
+                "lat": 50.087440865479,
+                "lon": 14.463284033285
+              },
+              "custom": [
+                {
+                  "type": "JTSK",
+                  "coordinates": {
+                    "x": 739831.1,
+                    "y": 1043425.38
+                  }
+                }
+              ]
+            },
+            "full": "Jeseniova 1151/55, 130 00 Praha 3"
+          }
+        }
+      ]
+    },
+    "errors": []
+  }
+}
