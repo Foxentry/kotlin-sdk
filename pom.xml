@@ -284,20 +284,19 @@
           </plugin>
 
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.8.0</version>
+            <groupId>org.jetbrains.dokka</groupId>
+            <artifactId>dokka-maven-plugin</artifactId>
+            <version>1.9.0</version>
             <executions>
               <execution>
                 <id>attach-javadocs</id>
+                <phase>prepare-package</phase>
                 <goals>
-                  <goal>jar</goal>
+                  <goal>javadoc</goal>
+                  <goal>javadocJar</goal>
                 </goals>
               </execution>
             </executions>
-            <configuration>
-              <source>${java.version}</source>
-            </configuration>
           </plugin>
 
           <plugin>
